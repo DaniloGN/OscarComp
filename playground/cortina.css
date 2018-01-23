@@ -1,0 +1,36 @@
+body {
+	min-height: 1000px;
+}
+
+.cortina {
+	width: 50%;
+	height: 500px;
+	position: absolute;
+	transition: all 2s ease-in-out;
+
+	padding: 0px;
+	z-index: 100;
+}
+
+#l {
+	background-color: red;
+	left: 0px;
+}
+
+#r {
+	background-color: blue;
+	right: 0px;
+}
+
+#a {
+	position: fixed;
+	z-index: 101;
+	left: 50%;
+	top: 250px;
+}
+
+#text {
+	height: 500px;
+	display: none;
+	background-color: LightSeaGreen;
+}
