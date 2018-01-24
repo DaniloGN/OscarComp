@@ -1,5 +1,5 @@
 <?php 
-class Endereco { 
+class Login { 
     private $email; 
 	private $senha;
 

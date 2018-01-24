@@ -1,9 +1,9 @@
 <?php 
 class Inscrito { 
     private $nome; 
-	private $sobrenome;
-	private $cpf ;
-	private $rg;
+	  private $sobrenome;
+	  private $cpf ;
+	  private $rg;
     private $sexo;
     private $nascimento;
     
