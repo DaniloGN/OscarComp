@@ -10,14 +10,15 @@ SET time_zone = "+00:00";
 --
 -- Database: `oscar_comp`
 --
-
+CREATE SCHEMA IF NOT EXISTS `oscar_comp` DEFAULT CHARACTER SET utf8 ;
+USE `oscar_comp` ;
 -- --------------------------------------------------------
 
 --
 -- Estrutura da tabela `endereco`
 --
 
-CREATE TABLE `endereco` (
+CREATE TABLE `oscar_comp`.`endereco` (
   `idENDERECO` int(10) UNSIGNED NOT NULL,
   `RUA` varchar(45) NOT NULL,
   `NUMERO` int(10) UNSIGNED DEFAULT NULL,
@@ -33,7 +34,7 @@ CREATE TABLE `endereco` (
 -- Estrutura da tabela `inscrito`
 --
 
-CREATE TABLE `inscrito` (
+CREATE TABLE `oscar_comp`.`inscrito` (
   `idINSCRITO` int(10) UNSIGNED NOT NULL,
   `P_NOME` varchar(20) NOT NULL,
   `S_NOME` varchar(45) NOT NULL,
@@ -50,7 +51,7 @@ CREATE TABLE `inscrito` (
 -- Estrutura da tabela `login`
 --
 
-CREATE TABLE `login` (
+CREATE TABLE `oscar_comp`.`login` (
   `idLOGIN` int(10) UNSIGNED NOT NULL,
   `EMAIL` varchar(45) NOT NULL,
   `SENHA` varchar(12) NOT NULL
@@ -62,7 +63,7 @@ CREATE TABLE `login` (
 -- Estrutura da tabela `telefone`
 --
 
-CREATE TABLE `telefone` (
+CREATE TABLE `oscar_comp`.`telefone` (
   `idTELEFONE` int(10) UNSIGNED NOT NULL,
   `DDD` tinyint(3) UNSIGNED NOT NULL,
   `NUMERO` int(10) UNSIGNED NOT NULL,
