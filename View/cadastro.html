@@ -1,134 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!--Import Google Icon Font-->
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen,projection"/>
-  <link type="text/css" rel="stylesheet" href="./css/cadastro.css" />
-
-  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <title>OSCAR COMP</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="./assets/materialize/css/materialize.min.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="./assets/css/cadastro.css" />
 </head>
 <body>
-  <div class="fullpage">
-     <header class="slidetext-center home text-center" data-anchor="firstPage" id="home">
-     <div class="navbar-fixed">
-     <nav class="mudar">
-        <div class="nav-wrapper">
+  <header class="slidetext-center home text-center" data-anchor="firstPage" id="home">
+    <nav class="navbar-fixed">
+      <div class="nav-wrapper">
         <a href="#" class="brand-logo">
-          <img src="./img/logo-menu.png" width="120" height="45" class="imagem_logo" style="margin-top: 5px;" ></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#home" class="cor_menu">Home</a></li>
-            <li><a href="#evento" class="cor_menu">O Evento</a></li>
-            <li><a href="#apresentacoes" class="cor_menu">Apresentações</a></li>
-            <li><a href="#patrocinadores" class="cor_menu">Patrocinadores</a></li>
-            <li><a href="#login" class="cor_menu">Login</a></li>
-          </ul>
-          </div>
-      </nav>
+        <img src="./assets/img/logo-menu.png" width="120" height="45" class="imagem_logo" style="margin-top: 5px;" ></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#home" class="cor_menu">Home</a></li>
+          <li><a href="#evento" class="cor_menu">O Evento</a></li>
+          <li><a href="#apresentacoes" class="cor_menu">Apresentações</a></li>
+          <li><a href="#patrocinadores" class="cor_menu">Patrocinadores</a></li>
+          <li><a href="#login" class="cor_menu">Login</a></li>
+        </ul>
       </div>
+    </nav>
+  </header>
 
-      <section id="cadastro" class="slide cadastro_p row">
-      <h3 class="center-align">Insira seus dados pessoais</h3>
-      <div class="container">
+  <section id="cadastro" class="slide cadastro_p row">
+    <h3 class="center-align">Insira seus dados pessoais</h3>
+    <div class="container">
       <div class="row teste">
         <form class="col s12">
+
           <div class="row">
             <div class="input-field col s6">
               <input id="first_name" type="text" class="validate">
               <label for="first_name">Nome</label>
             </div>
+
             <div class="input-field col s6">
               <input id="last_name" type="text" class="validate">
               <label for="last_name">Sobrenome</label>
             </div>
           </div>
-            <div class="input-field col s6">
-              <input id="last_name" type="text" class="validate">
-              <label for="last_name">Nascimento</label>
-            </div>
-            <div class="input-field col s6">
-          <select>
-             <option value="1"></option>
-            <option value="2">Masculino</option>
-            <option value="3">Feminino</option>
 
-          </select>
-          <label>Sexo</label>
-        </div>
-            <div class="input-field col s6">
-              <input id="last_name" type="text" class="validate">
-              <label for="last_name">RG</label>
-            </div>
-            <div class="input-field col s6">
-              <input id="last_name" type="text" class="validate">
-              <label for="last_name">CPF</label>
-            </div>
-            <div class="input-field col s6">
-              <input id="last_name" type="text" class="validate">
-              <label for="last_name">Telefone</label>
-            </div>
-            <div class="input-field col s6">
-              <input id="last_name" type="text" class="validate">
-              <label for="last_name">Celular</label>
-            </div>
-            <div class="input-field col s12">
-              <input id="last_name" type="text" class="validate">
-              <label for="last_name">Email</label>
-            </div>
-            <div class="input-field col s6">
-              <input id="last_name" type="text" class="validate">
-              <label for="last_name">Estado</label>
-            </div>
-            <div class="input-field col s6">
-              <input id="last_name" type="text" class="validate">
-              <label for="last_name">Cidade</label>
-            </div>
-            <div class="input-field col s6">
-              <input id="last_name" type="text" class="validate">
-              <label for="last_name">Cep</label>
-            </div>
-            <div class="input-field col s6">
-              <input id="last_name" type="text" class="validate">
-              <label for="last_name">Endereço</label>
-            </div>
-            </form>
-            </div>
-            <div class="col s6">
-              <a class="waves-effect waves-light btn">button</a>
-            </div>
-          </form>
-        </div>
-      </section>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Nascimento</label>
+          </div>
 
-      <!--Import jQuery before materialize.js-->
-              <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-              <script type="text/javascript" src="fullPage.js-master/jquery.fullPage.min.js"></script>
-              <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+          <div class="input-field col s6">
+            <select>
+              <option value="1"></option>
+              <option value="2">Masculino</option>
+              <option value="3">Feminino</option>
+            </select>
+            <label>Sexo</label>
+          </div>
 
-              <script>
-                $(document).ready(function(){
-                    $('#fullpage').fullpage({
-                        sectionsIds: ['#home', '#evento', '#apresentacoes', '#patrocinadores', 'login.html'],
-                        anchors: ['firstPage', 'secondPage', 'thirdPage', ' fourthPage', 'fifthPage'],
-                        menu: '#navbar',
-                        fitToSection: true,
-                        continuousVertical: true,
-                        paddingTop: '3em'
-                    });
-                });
-              </script>
-              <script>
-                $(document).ready(function() {
-          $('select').material_select();
-          });
-              </script>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">RG</label>
+          </div>
 
-              <script type="text/javascript" src="./js/cadastro.js"></script>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">CPF</label>
+          </div>
 
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Telefone</label>
+          </div>
+
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Celular</label>
+          </div>
+
+          <div class="input-field col s12">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Email</label>
+          </div>
+
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Estado</label>
+          </div>
+
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Cidade</label>
+          </div>
+
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Cep</label>
+          </div>
+
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Endereço</label>
+          </div>
+
+        </form>
+      </div>
+
+      <div class="col s6">
+        <a class="waves-effect waves-light btn">button</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./assets/materialize/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('select').material_select();
+    });
+  </script>
 </body>
 </html>
