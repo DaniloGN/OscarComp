@@ -54,3 +54,46 @@ nav {
   display: none;
   /* transition: all 2s ease-in-out; */
 }
+
+.input-field input {
+  margin-bottom: 10px;
+}
+
+form {
+  margin-top: 1.5em;
+}
+
+#modal_login {
+  border-radius: 0px;
+  background-color: #4C0507;
+}
+
+#modal_login_row {
+  height: auto;
+  margin-bottom: 0px;
+}
+
+#modal_login_esq {
+  height: 100%;
+}
+
+/* #modal_login_esq img {
+  /* height: auto; */
+} */
+
+#modal_login_d {
+  height: 100%;
+}
+
+#modal_login_d_cont {
+  margin-top: 2em;
+}
+
+#modal_login_send {
+  width: 100%;
+}
+
+#modal_login_cad {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}

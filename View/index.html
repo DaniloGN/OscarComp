@@ -30,9 +30,8 @@
       </div>
 
       <div class="miniatura row-fluid center-align">
-    	   <a href="#evento"><img src="./assets/img/oscar.png" class="t_mini"></a>
+        <a href="#evento"><img src="./assets/img/oscar.png" class="t_mini"></a>
       </div>
-
     </header>
 
 
@@ -42,13 +41,36 @@
 
   </section>
 
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+  <div id="modal_login" class="modal">
+    <div class="row" id="modal_login_row">
+      <div class="col s4" id="modal_login_esq">
+        <!-- <img src="./assets/img/oscar_modal.jpg" /> -->
+      </div>
+
+      <div class="col s8" id="modal_login_d" style="background-color:#fff;">
+        <div class="container" id="modal_login_d_cont">
+            <h4 class="center-align">Login</h4>
+            <form>
+              <div class="input-field">
+                <input id="email" name="email" type="email" />
+                <label for="email">Email</label>
+              </div>
+
+              <div class="input-field">
+                <input id="senha" name="senha" type="password" />
+                <label for="senha">Senha</label>
+              </div>
+
+              <div>
+                <button id="modal_login_send" class="waves-effect waves-light btn" type="submit">Entrar</button>
+              </div>
+            </form>
+
+            <div id="modal_login_cad">
+              <p class="right-align">É novo por aqui? <a>Cadastre-se.</a></p>
+            </div>
+        </div>
+      </div>
     </div>
   </div>
 

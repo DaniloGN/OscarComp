@@ -13,8 +13,10 @@ $(document).ready(function() {
   //   $(".hiden").fadeIn(2500);
   // })
   $('.modal').modal();
+  $('#modal_login').modal('open');
+
   $("#login").click(function() {
     console.log("ffgg");
-    $('#modal1').modal('open');
+    $('#modal_login').modal('open');
   })
 });
