@@ -68,6 +68,11 @@ form {
   background-color: #4C0507;
 }
 
+#modal_login_img {
+  width: 100%;
+  height: auto;
+}
+
 #modal_login_row {
   height: auto;
   margin-bottom: 0px;
@@ -76,10 +81,6 @@ form {
 #modal_login_esq {
   height: 100%;
 }
-
-/* #modal_login_esq img {
-  /* height: auto; */
-} */
 
 #modal_login_d {
   height: 100%;
