@@ -1,0 +1,60 @@
+nav {
+  background-color: black;
+}
+
+.cor_menu {
+  color: #6E6633 ;
+}
+
+#imagem_logo {
+  margin-top: 0.3em;
+  margin-left: 1em;
+  width: 120px;
+  height: 45px;
+}
+
+#cortina {
+  background-image: url("../img/cortina.jpg");
+  background-color: red;
+  height: 100vh;
+  width: 100vw;
+  transition: all 2s ease-in-out;
+  position: fixed;
+  z-index: 10 !important;
+  top: 0px;
+}
+
+#sec1 {
+  min-height: 1500px;
+  background-color: green;
+}
+
+#texto_cortina {
+  z-index: 100 !important2;
+  padding-top: 8%;
+  margin: 0px auto !important;
+  left: 50%
+  width: 50%;
+}
+
+#logo_oscar {
+  width: 650px;
+	height: 230px;
+}
+
+#estatueta_div {
+  padding-top: 6%;
+  margin: 0px auto!important;
+  padding-bottom: 2%;
+  /* transition: all 2s ease-in-out; */
+}
+
+#estatueta_div img {
+  width: 53px;
+  height: 129px;
+}
+
+.hiden {
+  display: none;
+  /* transition: all 2s ease-in-out; */
+}

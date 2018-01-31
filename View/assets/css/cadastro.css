@@ -1,48 +1,42 @@
-nav{
-    background-color: black;
+nav {
+  background-color: black;
 }
 
-.cor_menu{
-    color: #6E6633 ;
-}
-
-.teste{
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 8%;
-    margin-right: 8%;
-}
-
-.input-field input[type=text]:focus {
-     border-bottom: 1px solid red;
-     box-shadow: 0 1px 0 0 red;
-}
-
-.input-field label {
-     color: #bdbdbd;
-}
-
-.input-field input[type=text]:focus + label {
-     color: red;
-}
-
-.input-field option {
-     border-bottom: 1px solid red;
-     box-shadow: 0 1px 0 0 red;
-}
-
-#imagem_logo{
-    margin-top: 0.3em;
-    margin-left: 1em;
-    width: 120px;
-    height: 45px;
-}
-
-#linha_botoes button{
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-}
 
 .margin-top2{
   margin-top: 2em;
+}
+
+.cor_menu {
+  color: #6E6633 ;
+}
+
+.input-field input[type=text]:focus {
+   border-bottom: 1px solid red;
+   box-shadow: 0 1px 0 0 red;
+}
+
+.input-field label {
+   color: #bdbdbd;
+}
+
+.input-field input[type=text]:focus + label {
+   color: red;
+}
+
+.input-field option {
+   border-bottom: 1px solid red;
+   box-shadow: 0 1px 0 0 red;
+}
+
+#imagem_logo{
+  margin-top: 0.3em;
+  margin-left: 1em;
+  width: 120px;
+  height: 45px;
+}
+
+#linha_botoes button{
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
