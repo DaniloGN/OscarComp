@@ -1,0 +1,43 @@
+nav {
+  background-color: black;
+  box-shadow: 0 0 0 #000;
+}
+
+.cor_menu {
+  color: #6E6633 ;
+}
+
+#imagem_logo {
+  margin-top: 0.3em;
+  margin-left: 1em;
+  width: 120px;
+  height: 45px;
+}
+
+.organ_p img{
+ margin-left: 22%;
+ margin-right: 25%;
+ margin-top: 25%;
+ width: 55%;
+ border-radius: 200px;
+ -o-border-radius: 200px;
+ -ms-border-radius: 200px;
+ -moz-border-radius: 200px;
+ -webkit-border-radius: 200px;
+}
+
+.alinhar{
+  margin-left: 8%;
+  color: #4C0507;
+}
+
+.organ_p{
+  margin-top: 2%;
+  width: 100%;
+  height: 500px;
+  background-color: #4C0507;
+}
+
+.cor_nomes{
+  color: white;
+}
