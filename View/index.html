@@ -1,43 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>teste</title>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
+  <title>OSCAR COMP</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="./assets/materialize/css/materialize.min.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="./assets/css/index.css" />
+
 </head>
 <body>
-	<form action="./controller/Inscricao.php" method="post" autocomplete="off">
-	<div id="dados">
-	<h4>Cadastro:</h4>
+  <header class="navbar-fixed slidetext-center home text-center" data-anchor="firstPage" id="home">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">
+          <img src="./assets/img/logo-menu.png"  id="imagem_logo" />
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#evento" class="cor_menu">O Evento</a></li>
+          <li><a href="#apresentacoes" class="cor_menu">Apresentadores</a></li>
+          <li><a href="#patrocinadores" class="cor_menu">Patrocinadores</a></li>
+          <li><a href="categorias" class="cor_menu">Categorias</a></li>
+          <li><a href="#" class="cor_menu" id="login">Login</a></li>
 
-	<p>E-Mail:<input type="text" name="email" >
-		Senha:<input type="text" name="senha" >
-	</p>
-	<p>nome:<input type="text" name="nome" ></p>
-	<p>sobrenome:<input type="text" name="sobrenome" ></p>
-	<p>cpf:<input type="number" name="cpf" ></p>
-	<p>rg:<input type="text" name="rg" ></p>
-	<p>nascimento:<input type="text" name="nascimento" ></p>
-	<p>sexo:<input type="text" name="sexo" ></p>
+        </ul>
+      </div>
+    </nav>
+      <div class="logo1 row-fluid center-align">
+        <img src="./assets/img/logo.png" class="t_logo">
+      </div>
 
-	<p>ddd:<input type="number" name="ddd" >
-		telefone:<input type="text" name="telefone" >
-	</p>
-
-	<p>rua:<input type="text" name="rua" ></p>
-	<p>numero:<input type="number" name="numero" ></p>
-	<p>cidade:<input type="text" name="cidade" ></p>
-	<p>uf:<input type="text" name="uf" ></p>
-	<p>cep:<input type="number" name="cep" ></p>
-
-
-
-
-
-	</div>
-	<input type="submit" name="cadastrar" value="Cadastrar" id="cadastrar">
+      <div class="miniatura row-fluid center-align">
+        <a href="#evento"><img src="./assets/img/oscar.png" class="t_mini"></a>
+      </div>
+    </header>
 
 
 
-	</form>
+  <section id="evento">
+
+
+  </section>
+
+  <div id="modal_login" class="modal">
+    <div class="row" id="modal_login_row">
+      <div class="col s3" id="modal_login_esq" style="background-color: #4C0507;">
+        <img id="modal_login_img" src="./assets/img/oscar_modal.jpg" />
+      </div>
+
+      <div class="col s9" id="modal_login_d">
+        <div class="container" id="modal_login_d_cont">
+            <h4 class="center-align">Login</h4>
+            <form method="post">
+              <div class="input-field">
+                <input id="email" name="email" type="email" />
+                <label for="email">Email</label>
+              </div>
+
+              <div class="input-field texto_tema">
+                <input id="senha" name="senha" type="password" />
+                <label for="senha">Senha</label>
+              </div>
+
+              <div>
+                <button type="submit"  id="modal_login_send" class="waves-effect waves-light btn fundo_tema" type="submit">Entrar</button>
+              </div>
+            </form>
+
+            <div id="modal_login_cad">
+              <p class="right-align">É novo por aqui? <a href="./cadastro.html" class="texto_tema">Cadastre-se.</a></p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./assets/materialize/js/materialize.min.js"></script>
+  <script type="text/javascript" src="./assets/js/index.js"></script>
+  <script type="text/javascript" src="./assets/js/funcBarra.js"></script>
 </body>
 </html>

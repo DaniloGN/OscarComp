@@ -8,8 +8,10 @@
 	include("../Model/Telefone.php");
 	include("../Model/Endereco.php");
 	include("../Model/Login.php");
+	include("../Controller/ConversaoData.php");
 
-	$inscrito = new Inscrito($_POST["nome"],$_POST["sobrenome"],$_POST["cpf"],$_POST["rg"], $_POST["sexo"], $_POST["nascimento"]);
+	$data = new Data();
+	$inscrito = new Inscrito($_POST["nome"],$_POST["sobrenome"],$_POST["cpf"],$_POST["rg"], $_POST["genero"], $data->dataMY($_POST["nascimento"]));
 	$login = new Login($_POST["email"],$_POST["senha"]);
 	$telefone = new Telefone($_POST["ddd"],$_POST["telefone"]);
 	$endereco = new Endereco($_POST["rua"], $_POST["numero"], $_POST["cidade"],$_POST["cep"],$_POST["uf"]);
@@ -32,13 +34,13 @@
 	$vetor = mysqli_fetch_array($load, MYSQLI_ASSOC);
 
 	$fields = "P_NOME,S_NOME,CPF,RG,SEXO,DATANASC,LOGIN_idLOGIN";
-	$params = ("'".$inscrito->getNome()."','".$inscrito->getSobrenome()."',".$inscrito->getCpf().",'".$inscrito->getRg()."','".$inscrito->getSexo()."','".$inscrito->getNascimento()."',".$vetor['idLOGIN']);
+	$params = ("'".$inscrito->getNome()."','".$inscrito->getSobrenome()."','".$inscrito->getCpf()."','".$inscrito->getRg()."','".$inscrito->getSexo()."','".$inscrito->getNascimento()."',".$vetor['idLOGIN']);
 	$insert = $inscritoDAO->insert($fields,$params);
 	if($insert){
 		echo "OK!<br>\n";
 	}
 	$fields = "DDD,NUMERO,LOGIN_idLOGIN";
-	$params = ($telefone->getDdd().",".$telefone->getNumero().",".$vetor['idLOGIN']);
+	$params = ($telefone->getDdd().",'".$telefone->getNumero()."',".$vetor['idLOGIN']);
 	$insert = $telefoneDAO->insert($fields,$params);
 	if($insert){
 		echo "OK!<br>\n";
@@ -49,3 +51,4 @@
 	if($insert){
 		echo "OK!<br>\n";
 	}
+	?>

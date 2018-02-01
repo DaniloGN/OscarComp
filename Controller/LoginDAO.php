@@ -20,16 +20,18 @@
     }
     
     public function update($fields,$params=null,$where=null){
-        $sql = "UPDATE login SET ( ".$fields." = ".$params" )";
-        if(isset($where)) $sql ." WHERE ".$where;
+        $sql = "UPDATE login SET ".$fields." = ".$params;
+        if(isset($where)) $sql.=" WHERE ".$where;
+        echo $sql."<br>\n";
         $result = mysqli_query($this->con, $sql);
         return $result;
     }
     
     public function delete($where=null,$params=null){
         $sql = "DELETE FROM login";
-        if(isset($where)) $sql ." WHERE " .$where. " = ".$params;
-         $result = mysqli_query($this->con, $sql);
+        if(isset($where)) $sql.=" WHERE " .$where. " = ".$params;
+        echo $sql."<br>\n";
+        $result = mysqli_query($this->con, $sql);
         return $result;
     }
   }
