@@ -1,4 +1,15 @@
+S-- phpMyAdmin SQL Dump
+-- version 4.7.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: 01-Fev-2018 às 23:23
+-- Versão do servidor: 10.1.25-MariaDB
+-- PHP Version: 7.1.7
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -10,15 +21,14 @@ SET time_zone = "+00:00";
 --
 -- Database: `oscar_comp`
 --
-CREATE SCHEMA IF NOT EXISTS `oscar_comp` DEFAULT CHARACTER SET utf8 ;
-USE `oscar_comp` ;
+
 -- --------------------------------------------------------
 
 --
 -- Estrutura da tabela `endereco`
 --
 
-CREATE TABLE `oscar_comp`.`endereco` (
+CREATE TABLE `endereco` (
   `idENDERECO` int(10) UNSIGNED NOT NULL,
   `RUA` varchar(45) NOT NULL,
   `NUMERO` int(10) UNSIGNED DEFAULT NULL,
@@ -28,45 +38,40 @@ CREATE TABLE `oscar_comp`.`endereco` (
   `LOGIN_idLOGIN` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
-
 --
+
 -- Estrutura da tabela `inscrito`
 --
 
-CREATE TABLE `oscar_comp`.`inscrito` (
+CREATE TABLE `inscrito` (
   `idINSCRITO` int(10) UNSIGNED NOT NULL,
   `P_NOME` varchar(20) NOT NULL,
   `S_NOME` varchar(45) NOT NULL,
-  `SEXO` enum('Masculino','Feminino') NOT NULL,
-  `CPF` bigint(11) UNSIGNED NOT NULL,
+  `SEXO` varchar(9) NOT NULL,
+  `CPF` char(14) NOT NULL,
   `RG` varchar(11) NOT NULL,
   `DATANASC` date NOT NULL,
   `LOGIN_idLOGIN` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
-
 --
 -- Estrutura da tabela `login`
 --
 
-CREATE TABLE `oscar_comp`.`login` (
+CREATE TABLE `login` (
   `idLOGIN` int(10) UNSIGNED NOT NULL,
   `EMAIL` varchar(45) NOT NULL,
   `SENHA` varchar(12) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
-
 --
 -- Estrutura da tabela `telefone`
 --
 
-CREATE TABLE `oscar_comp`.`telefone` (
+CREATE TABLE `telefone` (
   `idTELEFONE` int(10) UNSIGNED NOT NULL,
   `DDD` tinyint(3) UNSIGNED NOT NULL,
-  `NUMERO` int(10) UNSIGNED NOT NULL,
+  `NUMERO` char(10) NOT NULL,
   `LOGIN_idLOGIN` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -104,7 +109,6 @@ ALTER TABLE `login`
 --
 ALTER TABLE `telefone`
   ADD PRIMARY KEY (`idTELEFONE`),
-  ADD UNIQUE KEY `DDD_NUMERO` (`DDD`,`NUMERO`),
   ADD KEY `fk_TELEFONE_LOGIN1_idx` (`LOGIN_idLOGIN`);
 
 --
@@ -115,22 +119,22 @@ ALTER TABLE `telefone`
 -- AUTO_INCREMENT for table `endereco`
 --
 ALTER TABLE `endereco`
-  MODIFY `idENDERECO` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idENDERECO` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 --
 -- AUTO_INCREMENT for table `inscrito`
 --
 ALTER TABLE `inscrito`
-  MODIFY `idINSCRITO` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `idINSCRITO` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 --
 -- AUTO_INCREMENT for table `login`
 --
 ALTER TABLE `login`
-  MODIFY `idLOGIN` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `idLOGIN` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 --
 -- AUTO_INCREMENT for table `telefone`
 --
 ALTER TABLE `telefone`
-  MODIFY `idTELEFONE` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `idTELEFONE` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 --
 -- Constraints for dumped tables
 --
@@ -152,6 +156,7 @@ ALTER TABLE `inscrito`
 --
 ALTER TABLE `telefone`
   ADD CONSTRAINT `fk_TELEFONE_LOGIN1` FOREIGN KEY (`LOGIN_idLOGIN`) REFERENCES `login` (`idLOGIN`) ON DELETE CASCADE ON UPDATE NO ACTION;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
