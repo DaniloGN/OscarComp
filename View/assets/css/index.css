@@ -3,6 +3,10 @@ nav {
   box-shadow: 0 0 0 #000;
 }
 
+/* button {
+  background-color: yellow;
+} */
+
 .cor_menu {
   color: #6E6633 ;
 }
@@ -59,13 +63,21 @@ nav {
   margin-bottom: 10px;
 }
 
+.fundo_tema {
+  background-color: #4C0507 !important;
+}
+
+.texto_tema {
+  color: #4C0507 !important;
+}
+
 form {
   margin-top: 1.5em;
 }
 
 #modal_login {
   border-radius: 0px;
-  background-color: #4C0507;
+  /* background-color: #4C0507; */
 }
 
 #modal_login_img {
@@ -98,3 +110,32 @@ form {
   margin-top: 2em;
   margin-bottom: 2em;
 }
+
+
+/* label color */
+ .input-field label {
+   color: #4C0507;
+ }
+ /* label focus color */
+ .input-field input[type=text]:focus + label {
+   color: #4C0507;
+ }
+ /* label underline focus color */
+ .input-field input[type=text]:focus {
+   border-bottom: 1px solid #4C0507;
+   box-shadow: 0 1px 0 0 #4C0507;
+ }
+ /* valid color */
+ .input-field input[type=text].valid {
+   border-bottom: 1px solid #4C0507;
+   box-shadow: 0 1px 0 0 #4C0507;
+ }
+ /* invalid color */
+ .input-field input[type=text].invalid {
+   border-bottom: 1px solid #4C0507;
+   box-shadow: 0 1px 0 0 #4C0507;
+ }
+ /* icon prefix focus color */
+ .input-field .prefix.active {
+   color: #4C0507;
+ }
