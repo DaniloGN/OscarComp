@@ -24,7 +24,10 @@ nav {
  -ms-border-radius: 200px;
  -moz-border-radius: 200px;
  -webkit-border-radius: 200px;
+ border: 6px solid white;
+
 }
+
 
 .alinhar{
   margin-left: 8%;
@@ -32,10 +35,10 @@ nav {
 }
 
 .organ_p{
-  margin-top: 2%;
   width: 100%;
-  height: 500px;
+  height: 70vh;
   background-color: #4C0507;
+
 }
 
 .cor_nomes{
