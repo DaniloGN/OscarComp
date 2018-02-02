@@ -71,6 +71,21 @@ nav {
   color: #4C0507 !important;
 }
 
+.my-card {
+  border: 2px solid #4C0507;
+  padding: 5px;
+  border-radius: 10%;
+  margin-bottom: 21px;
+}
+
+.my-card img {
+  border-radius: 10%;
+}
+
+.my-card div {
+  border-radius: 10%;
+}
+
 form {
   margin-top: 1.5em;
 }
@@ -110,7 +125,6 @@ form {
   margin-top: 2em;
   margin-bottom: 2em;
 }
-
 
 /* label color */
  .input-field label {
