@@ -1,0 +1,141 @@
+nav {
+  background-color: transparent;
+  box-shadow: 0 0 0 #000;
+}
+
+/* button {
+  background-color: yellow;
+} */
+
+.cor_menu {
+  color: #6E6633 ;
+}
+
+#imagem_logo {
+  margin-top: 0.3em;
+  margin-left: 1em;
+  width: 120px;
+  height: 45px;
+}
+
+#home{
+    background: url("../img/cortina.jpg");
+    background-size: 110%;
+    height: 100vh;
+}
+
+.logo1{
+	padding-top: 10%;
+  margin: 0px auto !important;
+
+}
+
+.miniatura{
+  padding-top: 10%;
+	margin: 0px auto!important;
+
+}
+
+.t_logo {
+  width: 650px;
+	height: 230px;
+}
+
+.t_mini {
+
+  width: 53px;
+  height: 129px;
+
+}
+
+.teste{
+  background-color: black;
+  transition:0.6s;
+}
+
+
+.hiden {
+  display: none;
+  /* transition: all 2s ease-in-out; */
+}
+
+.input-field input {
+  margin-bottom: 10px;
+}
+
+.fundo_tema {
+  background-color: #4C0507 !important;
+}
+
+.texto_tema {
+  color: #4C0507 !important;
+}
+
+form {
+  margin-top: 1.5em;
+}
+
+#modal_login {
+  border-radius: 0px;
+  /* background-color: #4C0507; */
+}
+
+#modal_login_img {
+  width: 100%;
+  height: auto;
+}
+
+#modal_login_row {
+  height: auto;
+  margin-bottom: 0px;
+}
+
+#modal_login_esq {
+  height: 100%;
+}
+
+#modal_login_d {
+  height: 100%;
+}
+
+#modal_login_d_cont {
+  margin-top: 2em;
+}
+
+#modal_login_send {
+  width: 100%;
+}
+
+#modal_login_cad {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+/* label color */
+ .input-field label {
+   color: #4C0507;
+ }
+ /* label focus color */
+ .input-field input[type=text]:focus + label {
+   color: #4C0507;
+ }
+ /* label underline focus color */
+ .input-field input[type=text]:focus {
+   border-bottom: 1px solid #4C0507;
+   box-shadow: 0 1px 0 0 #4C0507;
+ }
+ /* valid color */
+ .input-field input[type=text].valid {
+   border-bottom: 1px solid #4C0507;
+   box-shadow: 0 1px 0 0 #4C0507;
+ }
+ /* invalid color */
+ .input-field input[type=text].invalid {
+   border-bottom: 1px solid #4C0507;
+   box-shadow: 0 1px 0 0 #4C0507;
+ }
+ /* icon prefix focus color */
+ .input-field .prefix.active {
+   color: #4C0507;
+ }

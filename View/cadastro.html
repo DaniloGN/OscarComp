@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>OSCAR COMP</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="./assets/materialize/css/materialize.min.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="./assets/css/cadastro.css" />
+</head>
+<body>
+  <header class="slidetext-center home text-center" data-anchor="firstPage" id="home">
+    <nav class="navbar-fixed">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">
+        <img src="./assets/img/logo-menu.png"  id="imagem_logo" ></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#evento" class="cor_menu">O Evento</a></li>
+          <li><a href="#apresentacoes" class="cor_menu">Apresentadores</a></li>
+          <li><a href="#patrocinadores" class="cor_menu">Patrocinadores</a></li>
+          <li><a href="#categorias" class="cor_menu">Categorias</a></li>
+          <li><a href="#login" class="cor_menu">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section id="cadastro" class="slide cadastro_p row">
+    <h3 class="center-align">Insira seus dados pessoais</h3>
+    <div class="container margin-top2">
+      <div class="row teste">
+        <form method="post" class="col s12">
+
+          <div class="row">
+            <div class="input-field col s12 m6">
+              <input id="nome" name="nome" type="text" required/>
+              <label for="nome">Nome</label>
+            </div>
+
+            <div class="input-field col s12 m6">
+              <input id="sobrenome" name="sobrenome" type="text" required/>
+              <label for="sobrenome">Sobrenome</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6 m3">
+              <input id="nascimento" name="nascimento" type="text" class="datepicker" placeholder="dd/mm/yyyy" required/>
+              <label for="nascimento">Nascimento</label>
+            </div>
+
+            <div class="input-field col s6 m3">
+              <select id="genero" name="genero" required="true">
+                <option value="" disabled selected>Selecione um gênero</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Outros">Outros</option>
+              </select>
+              <label for="genero">Gênero</label>
+            </div>
+
+            <div class="input-field col s6 m3">
+              <input id="rg" name="rg" type="text" maxlength="11" required/>
+              <label for="rg">RG</label>
+            </div>
+
+            <div class="input-field col s6 m3">
+              <input id="cpf" name="cpf" type="text" placeholder="000.000.000-00" minlength="11" required/>
+              <label for="cpf">CPF</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s9 m5">
+              <input id="rua" name="rua" type="text" required/>
+              <label for="rua">Logradouro</label>
+            </div>
+
+            <div class="input-field col s3 m1">
+              <input id="numero" name="numero" type="text" required/>
+              <label for="numero">Número</label>
+            </div>
+
+            <div class="input-field col s12 m3">
+              <input id="cidade" name="cidade" type="text" required/>
+              <label for="cidade">Cidade</label>
+            </div>
+
+            <div class="input-field col s9 m2">
+              <input id="cep" name="cep" type="text" placeholder="00000-000" required/>
+              <label for="cep">CEP</label>
+            </div>
+
+            <div class="input-field col s3 m1">
+              <select name="uf" id="uf" required="true">
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AM">AM</option>
+                <option value="AP">AP</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MG" selected>MG</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="PR">PR</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SE">SE</option>
+                <option value="SP">SP</option>
+                <option value="TO">TO</option>
+               </select>
+              <label for="uf">UF</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s2 m1">
+              <input id="ddd" name="ddd" type="text" placeholder="00" required/>
+              <label for="ddd">DDD</label>
+            </div>
+
+            <div class="input-field col s10 m5">
+              <input id="telefone" name="telefone" type="text" required/>
+              <label for="telefone">Telefone</label>
+            </div>
+
+            <div class="input-field col s12 m6">
+              <input id="email" type="email" name="email" class="validade" required/>
+              <label for="email">Email</label>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="input-field col s12 m6">
+              <input id="senha" name="senha" type="password" required/>
+              <label for="senha">Senha</label>
+            </div>
+
+            <div class="input-field col s12 m6">
+              <input id="senha_confirmacao" name="senha_confirmacao" type="password" required/>
+              <label for="senha_confirmacao">Confirmação da senha</label>
+            </div>
+          </div>
+
+        <div class="row">
+          <div class="input-field col s6 right-align">
+            <button id="cancelar" class="waves-effect waves-light btn">Cancelar</button>
+          </div>
+
+          <div class="input-field col s6">
+            <button type="submit" id="cadastrar" name="cadastrar" class="waves-effect waves-light btn">Concluir</button>
+          </div>
+        </div>
+
+      </div>
+    </form>
+
+
+    </div>
+  </section>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.13/jquery.mask.min.js"></script>
+  <script type="text/javascript" src="./assets/materialize/js/materialize.min.js"></script>
+  <script type="text/javascript" src="../View/assets/js/cadastro.js"> </script>
+
+  <script>
+    $(document).ready(function() {
+      $('#cpf').mask('000.000.000-00', {reverse: true});
+      $('#cep').mask('00000-000');
+      $('#ddd').mask('00');
+      $('#telefone').mask('00000-0000');
+      $('#nascimento').mask('00/00/0000');
+      $('input.autocomplete').autocomplete({
+        data: {
+          "MG": null,
+          "SP": null
+        },
+        minLength: 1
+      });
+
+      $('select').material_select();
+
+      // $('.datepicker').pickadate({
+      //   selectMonths: true,
+      //   today: "Hoje",
+      //   clear: "Limpar",
+      //   close: "Fechar",
+      //   closeOnSelect: false,
+      //   monthsFull: [
+      //     'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
+      //     'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro' , 'Dezembro'
+      //   ],
+      //   monthsShort: [
+      //     'Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun',
+      //     'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'
+      //   ],
+      //   weekdaysFull: [
+      //     'Domingo', 'Segunda-Feira', 'Terca-Feira', 'Quarta-Feira',
+      //     'Quinta-Feira', 'Sexta-Feira', 'Sabado'
+      //   ],
+      //   weekdaysShort: [ 'Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab' ],
+      //   weekdaysLetter: [ 'D', 'S', 'T', 'Q', 'Q', 'S', 'S' ],
+      //   format: 'dd/mm/yyyy'
+      // });
+    });
+  </script>
+</body>
+</html>

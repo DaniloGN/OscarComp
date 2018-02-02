@@ -1,0 +1,46 @@
+nav {
+  background-color: black;
+}
+
+
+.margin-top2{
+  margin-top: 2em;
+}
+
+.cor_menu {
+  color: #6E6633 ;
+}
+
+.input-field input[type=text]:focus {
+   border-bottom: 1px solid red;
+   box-shadow: 0 1px 0 0 red;
+}
+
+.input-field label {
+   color: #bdbdbd;
+}
+
+.input-field input[type=text]:focus + label {
+   color: red;
+}
+
+.input-field option {
+   border-bottom: 1px solid red;
+   box-shadow: 0 1px 0 0 red;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+#imagem_logo{
+  margin-top: 0.3em;
+  margin-left: 1em;
+  width: 120px;
+  height: 45px;
+}
+
+#linha_botoes button{
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
