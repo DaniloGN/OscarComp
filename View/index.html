@@ -54,17 +54,18 @@
             <h4 class="center-align">Login</h4>
             <form method="post">
               <div class="input-field">
-                <input id="email" name="email" type="email" />
+                <input id="email" name="email" type="email" required/>
                 <label for="email">Email</label>
               </div>
 
               <div class="input-field texto_tema">
-                <input id="senha" name="senha" type="password" />
+                <input id="senha" name="senha" type="password" required/>
                 <label for="senha">Senha</label>
               </div>
 
               <div>
-                <button type="submit"  id="modal_login_send" class="waves-effect waves-light btn fundo_tema" type="submit">Entrar</button>
+                <button id="modal_login_send" class="waves-effect waves-light btn fundo_tema" type="submit" >Entrar</button>
+                <p id="errolog" style ="color:red" class="center-align">Usuário ou senha inválidos!</p>
               </div>
             </form>
 
@@ -82,3 +83,4 @@
   <script type="text/javascript" src="./assets/js/funcBarra.js"></script>
 </body>
 </html>
+
