@@ -24,7 +24,7 @@ nav {
  -ms-border-radius: 200px;
  -moz-border-radius: 200px;
  -webkit-border-radius: 200px;
- border: 6px solid white;
+ border: 5px solid white;
 
 }
 
@@ -43,4 +43,23 @@ nav {
 
 .cor_nomes{
   color: white;
+
+}
+
+.palest_p img{
+  margin-top: 4%;
+ width: 55%;
+ border-radius: 200px;
+ -o-border-radius: 200px;
+ -ms-border-radius: 200px;
+ -moz-border-radius: 200px;
+ -webkit-border-radius: 200px;
+ border: 3px solid white;
+
+}
+
+.palest_p{
+  width: 100%;
+  height: auto;
+  background-color: #4C0507;
 }
