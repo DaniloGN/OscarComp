@@ -30,7 +30,6 @@
     public function delete($where=null,$params=null){
         $sql = "DELETE FROM login";
         if(isset($where)) $sql.=" WHERE " .$where. " = ".$params;
-        echo $sql."<br>\n";
         $result = mysqli_query($this->con, $sql);
         return $result;
     }

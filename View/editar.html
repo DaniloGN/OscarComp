@@ -11,6 +11,11 @@
 </head>
 <body>
   <header class="slidetext-center home text-center" data-anchor="firstPage" id="home">
+
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a id="sair">Sair</a></li>
+      </ul>
+
     <nav class="navbar-fixed">
       <div class="nav-wrapper">
         <a href="#" class="brand-logo">
@@ -20,7 +25,7 @@
           <li><a href="#apresentacoes" class="cor_menu">Apresentadores</a></li>
           <li><a href="#patrocinadores" class="cor_menu">Patrocinadores</a></li>
           <li><a href="#categorias" class="cor_menu">Categorias</a></li>
-          <li><a href="#login" class="cor_menu">Login</a></li>
+          <li><a id="logado" class="dropdown-button cor_menu" href="#!" data-activates="dropdown1"><i class="material-icons right">arrow_drop_down</i></a></li>
         </ul>
       </div>
     </nav>
@@ -29,12 +34,12 @@
     <h3 class="center-align">Editar seus dados pessoais</h3>
     <div class="container margin-top2">
       <div class="row teste">
-        <form class="col s12">
+        <form class="col s12" method="post">
 
           <div class="row">
             <div class="input-field col s12 m6">
               <input id="nome" name="nome" type="text" />
-              <label for="nome">Nome</label>
+              <label class="active" for="nome">Nome</label>
             </div>
 
             <div class="input-field col s12 m6">
@@ -52,20 +57,20 @@
             <div class="input-field col s6 m3">
               <select id="genero" name="genero">
                 <option value="" disabled selected>Selecione um gênero</option>
-                <option value="0">Masculino</option>
-                <option value="1">Feminino</option>
-                <option value="2">Outros</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Outros">Outros</option>
               </select>
               <label for="genero">Gênero</label>
             </div>
 
             <div class="input-field col s6 m3">
-              <input id="rg" name="rg" type="text" />
+              <input id="rg" readonly="readonly" name="rg" type="text" />
               <label for="rg">RG</label>
             </div>
 
             <div class="input-field col s6 m3">
-              <input id="cpf" name="cpf" type="text" placeholder="000.000.000-00" />
+              <input id="cpf" readonly="readonly" name="cpf" type="text" placeholder="000.000.000-00" />
               <label for="cpf">CPF</label>
             </div>
           </div>
@@ -114,7 +119,7 @@
             </div>
 
             <div class="input-field col s12 m6">
-              <input id="email" type="email" class="validade" />
+              <input id="email" readonly="readonly" type="email" class="validade" />
               <label for="email">Email</label>
             </div>
           </div>
@@ -123,27 +128,27 @@
           <div class="row">
             <div class="input-field col s12 m6">
               <input id="senha" name="senha" type="password" />
-              <label for="senha">Senha</label>
+              <label for="senha">Senha antiga</label>
             </div>
 
             <div class="input-field col s12 m6">
               <input id="senha_confirmacao" name="senha_confirmacao" type="password" />
-              <label for="senha_confirmacao">Confirmação da senha</label>
+              <label for="senha_confirmacao">Nova senha</label>
             </div>
           </div>
-        </form>
-
         <div class="row">
           <div class="input-field col s6 right-align">
             <button class="waves-effect waves-light btn">Cancelar</button>
           </div>
 
           <div class="input-field col s6">
-            <button class="waves-effect waves-light btn">Concluir</button>
+            <button id="editar" type="submit" class="waves-effect waves-light btn">Concluir</button>
           </div>
         </div>
 
       </div>
+        </form>
+
 
 
     </div>
@@ -153,6 +158,8 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.13/jquery.mask.min.js"></script>
   <script type="text/javascript" src="./assets/materialize/js/materialize.min.js"></script>
   <script type="text/javascript" src="./assets/js/editar.js"></script>
+  <script type="text/javascript" src="./assets/js/logout.js"></script>
+  <script type="text/javascript" src="./assets/js/usuarioLogado.js"></script>
 
   <script>
     $(document).ready(function() {

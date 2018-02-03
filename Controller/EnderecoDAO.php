@@ -22,6 +22,7 @@
      public function update($fields,$params=null,$where=null){
         $sql = "UPDATE endereco SET ".$fields." = ".$params;
         if(isset($where)) $sql.=" WHERE ".$where;
+        echo $sql."<br>\n";
         $result = mysqli_query($this->con, $sql);
         return $result;
     }
