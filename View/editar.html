@@ -7,29 +7,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="./assets/materialize/css/materialize.min.css" media="screen,projection"/>
-  <link type="text/css" rel="stylesheet" href="./assets/css/cadastro.css" />
+  <link type="text/css" rel="stylesheet" href="./assets/css/cadastroo.css" />
+
 </head>
 <body>
-  <header class="slidetext-center home text-center" data-anchor="firstPage" id="home">
+ <header class="navbar-fixed slidetext-center home text-center" data-anchor="firstPage" id="home">
 
-    <ul id="dropdown1" class="dropdown-content">
-        <li><a id="sair">Sair</a></li>
+    <!-- Dropdown Structure -->
+      <ul id="dropdown2" class="dropdown-content">
+        <li><a href="editar.html">Editar</a></li>
+        <li><a href="#" id="sair">Sair</a></li>
       </ul>
 
-    <nav class="navbar-fixed">
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo">
-        <img src="./assets/img/logo-menu.png"  id="imagem_logo"  ></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#evento" class="cor_menu">O Evento</a></li>
-          <li><a href="#apresentacoes" class="cor_menu">Apresentadores</a></li>
-          <li><a href="#patrocinadores" class="cor_menu">Patrocinadores</a></li>
-          <li><a href="#categorias" class="cor_menu">Categorias</a></li>
-          <li><a id="logado" class="dropdown-button cor_menu" href="#!" data-activates="dropdown1"><i class="material-icons right">arrow_drop_down</i></a></li>
-        </ul>
-      </div>
-    </nav>
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="indexLogado.html#palestrantes2">Palestrantes</a></li>
+        <li><a href="indexLogado.html#organizadores2">Organizadores</a></li>
+        <li><a href="indexLogado.html#local2">Patrocinadores</a></li>
+        <li><a href="indexLogado.html#local2">Localização</a></li>
+    </ul>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="../View/indexLogado.html" class="brand-logo">
+            <img src="./assets/img/logo-menu.png"  id="imagem_logo" />
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#evento" class="cor_menu">O Evento</a></li>
+            <li><a class="dropdown-button cor_menu" href="#!" data-activates="dropdown1">Mais Infos<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a id="logado" class="dropdown-button cor_menu" href="#!" data-activates="dropdown2"><i class="material-icons right">arrow_drop_down</i></a></li>
+         </ul>
+        </div>
+      </nav>
   </header>
+
   <section id="cadastro" class="slide cadastro_p row">
     <h3 class="center-align">Editar seus dados pessoais</h3>
     <div class="container margin-top2">
@@ -97,13 +106,35 @@
             </div>
 
             <div class="input-field col s3 m1">
-              <!-- <select id="uf" name="uf">
-                <option value="" disabled selected></option>
-                <option value="">MG</option>
-                <option value="">SP</option>
-                <option value="">RJ</option>
-              </select> -->
-              <input id="uf" name="uf" type="text" class="autocomplete" />
+              <select name="uf" id="uf"="true">
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AM">AM</option>
+                <option value="AP">AP</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MG" selected>MG</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="PR">PR</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SE">SE</option>
+                <option value="SP">SP</option>
+                <option value="TO">TO</option>
+               </select>
               <label for="uf">UF</label>
             </div>
           </div>
@@ -157,7 +188,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.13/jquery.mask.min.js"></script>
   <script type="text/javascript" src="./assets/materialize/js/materialize.min.js"></script>
-  <script type="text/javascript" src="./assets/js/editar.js"></script>
+  <script type="text/javascript" src="./assets/js/editaar.js"></script>
   <script type="text/javascript" src="./assets/js/logout.js"></script>
   <script type="text/javascript" src="./assets/js/usuarioLogado.js"></script>
 

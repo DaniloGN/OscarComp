@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+  $(".button-colapse").sideNav();
+
   $('.modal').modal();
 
   $("#login").click(function() {

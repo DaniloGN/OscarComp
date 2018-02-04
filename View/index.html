@@ -8,10 +8,17 @@
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="./assets/materialize/css/materialize.min.css" media="screen,projection"/>
   <link type="text/css" rel="stylesheet" href="./assets/css/index.css" />
-
 </head>
 <body>
-  <header class="navbar-fixed slidetext-center home text-center" data-anchor="firstPage" id="home">
+  <div class="fullpage">
+  <header class="slidetext-center home text-center"  id="home">
+    <div class="navbar-fixed">
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#palestrantes2">Palestrantes</a></li>
+      <li><a href="#organizadores2">Organizadores</a></li>
+      <li><a href="#local2">Patrocinadores</a></li>
+      <li><a href="#local2">Localização</a></li>
+  </ul>
     <nav>
       <div class="nav-wrapper">
         <a href="#" class="brand-logo">
@@ -19,15 +26,14 @@
         </a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="#evento" class="cor_menu">O Evento</a></li>
-          <li><a href="#apresentacoes" class="cor_menu">Apresentadores</a></li>
-          <li><a href="#patrocinadores" class="cor_menu">Patrocinadores</a></li>
-          <li><a href="categorias" class="cor_menu">Categorias</a></li>
-          <li><a href="#" class="cor_menu" id="login">Login</a></li>
-
-        </ul>
+          <li><a class="dropdown-button cor_menu" href="#!" data-activates="dropdown1">Mais Infos<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a id="login" class="cor_menu">Login</a></li>
+       </ul>
       </div>
     </nav>
-      <div class="logo1 row-fluid center-align">
+  </div>
+
+      <div class="logo2 row-fluid center-align">
         <img src="./assets/img/logo.png" class="t_logo">
       </div>
 
@@ -37,16 +43,211 @@
     </header>
 
 
+<div class="fullPage">
+  <section id="evento" class="slide Evento_p row" data-anchor="firstPage">
+    <div class="row fundo_tema"  style="padding-top: 5em;">
+      <div class="col s12 m7 offset-m1" id="#descricao">
+        <h4 class="center-align white-text text-lighten-4" style="padding-bottom: 0.5em;">Oscar CompJúnior</h4>
+        <p class="center-align white-text text-lighten-4 flow-text" style="padding-bottom: 2.5em;">
+          A maior premiação de membros trainees de EJ’s do sul de Minas! De tudo um pouco, além de alegria esse Oscar tem emoção. Registre-se para espiar as categorias, garanta seu lugar nas cadeiras da apresentação.</p>
+          <h6 class="white-text"><strong>Data: 06 de fevereiro de 2018</h6>
+          <a href="#local2"><h6 class="white-text">Local: Anfiteatro do DCC UFLA</h6></strong></a>
 
-  <section id="evento">
 
+      </div>
+
+      <div class="col s10 m3 offset-m1 center-align">
+        <img src="./assets/img/oscar_modal.png" class="responsive-img" />
+      </div>
+    </div>
+
+    <div style="padding-top: 0.5em;">
+      <div>
+        <h4 class="center-align texto_tema" style="padding-bottom: 0.5em;">Confira as categorias</h4>
+
+        <div class="container">
+          <div class="row">
+            <div class="col s6 m3 offset-m1 card">
+                <a href="../View/cadastro.html" > <img  class="responsive-img img_categorias foto" id="teste_hover" src="./assets/img/sorriso.jpg"
+                  onMouseOver="this.src='./assets/img/sorriso2.jpg'"
+                  onMouseOut="this.src='./assets/img/sorriso.jpg'" /></a>
+                <p class="center-align">Sorriso, ahhh</p>
+              </div>
+
+              <div class="col s6 m3 offset-m1 card">
+                  <a href="../View/cadastro.html" > <img  class="responsive-img img_categorias foto" id="teste_hover" src="./assets/img/abraco.jpg"
+                    onMouseOver="this.src='./assets/img/abraco2.jpg'"
+                    onMouseOut="this.src='./assets/img/abraco.jpg'" /></a>
+                  <p class="center-align">Abraço de bispo</p>
+                </div>
+
+              <div class="col s6 m3 offset-m1 card">
+                  <a href="../View/cadastro.html" > <img  class="responsive-img img_categorias foto" id="teste_hover" src="./assets/img/culaxa.jpg"
+                    onMouseOver="this.src='./assets/img/culaxa2.jpg'"
+                    onMouseOut="this.src='./assets/img/culaxa.jpg'" /></a>
+                  <p class="center-align">Miss Culaxa</p>
+                </div>
+
+              <div class="col s6 m3 offset-m1 card">
+                  <a href="../View/cadastro.html" > <img  class="responsive-img img_categorias foto" id="teste_hover" src="./assets/img/rei2.jpg"
+                    onMouseOver="this.src='./assets/img/rei22.jpg'"
+                    onMouseOut="this.src='./assets/img/rei2.jpg'" /></a>
+                  <p class="center-align">Rei Delas</p>
+                </div>
+
+              <div class="col s6 m3 offset-m1 card">
+                  <a href="../View/cadastro.html" > <img  class="responsive-img img_categorias foto" id="teste_hover" src="./assets/img/role.jpg"
+                    onMouseOver="this.src='./assets/img/role2.jpg'"
+                    onMouseOut="this.src='./assets/img/role.jpg'" /></a>
+                  <p class="center-align">Deus abençoe o rolê</p>
+                </div>
+
+              <div class="col s6 m3 offset-m1 card">
+                  <a href="../View/cadastro.html" > <img  class="responsive-img img_categorias foto" id="teste_hover" src="./assets/img/gentileza.jpg"
+                    onMouseOver="this.src='./assets/img/gentileza2.jpg'"
+                    onMouseOut="this.src='./assets/img/gentileza.jpg'" /></a>
+                  <p class="center-align">Super Gentileza</p>
+                </div>
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
   </section>
+
+<!-- PALESTRANTES -->
+<div class="retangulo" id="palestrantes2" />
+  <h4 class="alinhar  text-lighten-4">
+    <strong>Palestrantes</strong>
+  </h4>
+
+
+  <section id="palestrantes" class="slide palest_p row" data-anchor="secondPage">
+
+    <div class="container">
+    <div class="row">
+
+      <div class="col s12 m4 ">
+        <div class="center-align">
+          <img src="./assets/img/karol.jpg" class="center-align img- responsive img-circle" alt="Foto de Perfil"/>
+        </div>
+          <h5 class="cor_nomes center-align"><strong>Karoline</h5>
+        </div>
+
+        <div class="col s12 m4 ">
+          <div class="center-align">
+          <img src="./assets/img/gabriel.jpeg" class="img- responsive img-circle " alt="Foto de Perfil"/>
+        </div>
+          <h5 class="cor_nomes center-align"><strong>Gabriel</h5>
+        </div>
+
+        <div class="col s12 m4 ">
+          <div class="center-align">
+          <img src="./assets/img/brendex.jpg" class="img- responsive img-circle posicao" alt="Foto de Perfil"/>
+        </div>
+          <h5 class=" cor_nomes center-align"><strong>Breno</h5></strong>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m4 ">
+          <div class="center-align">
+          <img src="./assets/img/krusty.jpeg" class="img- responsive img-circle posicao" alt="Foto de Perfil"/>
+        </div>
+          <h5 class=" cor_nomes center-align"><strong>Leonardo</strong></h5>
+        </div>
+
+        <div class="col s12 m4 ">
+          <div class="center-align">
+          <img src="./assets/img/alice.jpeg" class="img- responsive img-circle posicao" alt="Foto de Perfil"/>
+        </div>
+          <h5 class=" cor_nomes center-align"><strong>Alice</h5></strong>
+        </div>
+
+        <div class="col s12 m4 ">
+          <div class="center-align">
+          <img src="./assets/img/danilo.jpeg" class="img- responsive img-circle posicao" alt="Foto de Perfil"/>
+        </div>
+          <h5 class=" cor_nomes center-align"><strong>Danilo</h5></strong>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ORGANIZADORES -->
+  <div class="retangulo" id="organizadores2" />
+
+  <h4 class="alinhar  text-lighten-4">
+    <strong>Organizadores</strong>
+  </h4>
+
+  <section id="organizadores" class="slide organ_p row" data-anchor="thirdPage">
+
+    <div class="row">
+      <div class="col s12 m4">
+        <img src="./assets/img/bruna.jpeg" id="oo" class="img- responsive img-circle" alt="Foto de Perfil"/>
+        <h5 class="center-align cor_nomes"><strong>Bruna</h5>
+      </div>
+
+      <div class="col s12 m4 posicao">
+        <img src="./assets/img/caio.jpg" class="img- responsive img-circle " alt="Foto de Perfil"/>
+        <h5 class="center-align cor_nomes"><strong>Caio</h5>
+      </div>
+
+      <div class="col s12 m4">
+        <img src="./assets/img/rennan2.jpeg" class="img- responsive img-circle posicao" alt="Foto de Perfil"/>
+        <h5 class="center-align cor_nomes"><strong>Rennan</h5></strong>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- patrocinadores/local -->
+  <div class="retangulo" id="local2" />
+
+<div class="alinhar2">
+  <section id="local" class="slide local_id row" data-anchor="fourthPage">
+    <div class="row">
+      <div class="col s6 text-center">
+        <h3 class="center-align">Localização</h3>
+        <iframe class="center-align" id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.100399109883!2d-44.980737685063964!3d-21.227866985890888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9ffdde831d710d%3A0x49bf82e78ef962c7!2sDepartamento+de+Ci%C3%AAncia+da+Computa%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1517504299497" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <p class="center-align"><strong>Departamento de Ciência da Computação</p>
+        <p class="center-align">Universidade Federal de Lavras</p></strong>
+      </div>
+
+      <div class="col s6">
+        <h3 class="center-align">Patrocinadores</h3>
+        <img src="./assets/img/logo-comp.png" id="imagem_comp">
+        <img src="./assets/img/logo-ufla.jpg" id="imagem_ufla">
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-footer cor_footer">
+   <div class="container">
+     <div class="row">
+       <div class="col l6 s12">
+        <a href="#"><img class="img_footer" src="./assets/img/oscar_modal.png"/></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</div>
+
+<!-- *********************************************************************** -->
+
 
   <div id="modal_login" class="modal">
     <div class="row" id="modal_login_row">
       <div class="col s3" id="modal_login_esq" style="background-color: #4C0507;">
-        <img id="modal_login_img" src="./assets/img/oscar_modal.jpg" />
+        <img id="modal_login_img" src="./assets/img/oscar_modal.png" />
       </div>
 
       <div class="col s9" id="modal_login_d">
@@ -77,6 +278,7 @@
     </div>
   </div>
 
+  
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="./assets/materialize/js/materialize.min.js"></script>
   <script type="text/javascript" src="./assets/js/index.js"></script>

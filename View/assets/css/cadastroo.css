@@ -44,3 +44,15 @@ nav {
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
+
+.erro{
+    color: red;
+    margin-top: 0px;
+}
+#toast-container {
+  top: auto !important;
+  right: auto !important;
+  bottom: 12%;
+  left:40.5%; 
+
+}

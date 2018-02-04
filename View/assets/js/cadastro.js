@@ -18,17 +18,49 @@ $("#cancelar").click(function () {
 
 $("#cadastrar").click(function()
 {	
+	cpf = $("#cpf").val();
+	data = $("#nascimento").val();
+	telefone = $("#telefone").val();
+
 	var testevazio = true;
 	if($("#senha").val() != $("#senha_confirmacao").val()){
 		testevazio = false;
-		alert("Senhas não são iguais");
+		Materialize.toast('Senhas não são iguais!', 1500, 'rounded red');
 	}
 
 	if(!$("#email").val() || !$("#senha").val() || !$("#nome").val() || !$("#sobrenome").val() || !$("#cpf").val() || !$("#rg").val() || !$("#genero").val() 
 	|| !$("#nascimento").val() || !$("#ddd").val() || !$("#telefone").val() || !$("#rua").val() || !$("#numero").val() || !$("#cidade").val() 
 	|| !$("#cep").val() || !$("#uf").val()){
+		Materialize.toast('Preencha todos os campos!', 1500, 'rounded red');
 		testevazio = false;
 	}
+
+	else if ($("#email").val().indexOf("@") == -1 ||
+      $("#email").val().indexOf(".") == -1 ||
+      $("#email").val() == "" ||
+      $("#email").val() == null) {
+      	testevazio = false;
+      	Materialize.toast('Por favor, indique um e-mail válido!', 1500, 'rounded red');
+        $("#email").focus();
+
+    } 
+    
+    else if(cpf.length < 11){
+    	testevazio = false;
+    	Materialize.toast('CPF inválido!', 1500, 'rounded red');
+    }
+
+
+    else if(data.length < 10){
+    	testevazio = false;
+    	Materialize.toast('Data de nascimento inválida!', 1500, 'rounded red');
+    }
+
+    else if(telefone.length < 10){
+    	testevazio = false;
+    	Materialize.toast('Telefone inválido!', 1500, 'rounded red');
+    }
+
  	var campoEmail = $("#email").val();
  	var campoSenha = $("#senha").val();
 	var campoNome = $("#nome").val();
@@ -73,31 +105,31 @@ $("#cadastrar").click(function()
 	        error:function(error){
 	       	if ( error.responseText.trim() == "email")
 	        {
-	        	alert('Email já utilizado');
+	        	Materialize.toast('Email já utilizado!', 1500, 'rounded red');
 	        }
 	        if ( error.responseText.trim() == "cpf")
 	        {
-	        	alert('CPF já utilizado');
+	        	Materialize.toast('CPF já utilizado!', 1500, 'rounded red');
 	        }
 	        if ( error.responseText.trim() == "rg")
 	        {
-	        	alert('RG já utilizado');
+	        	Materialize.toast('RG já utilizado!', 1500, 'rounded red');
 	        }
 	        if ( error.responseText.trim() == "email+cpf")
 	        {
-	        	alert('Email e CPF já utilizado');
+	       		Materialize.toast('Email e CPF já utilizados!', 1500, 'rounded red');
 	        }
 	        if ( error.responseText.trim() == "email+rg")
 	        {
-	        	alert('Email e RG já utilizado');
+	        	Materialize.toast('Email e RG já utilizados!', 1500, 'rounded red');
 	        }
 	        if ( error.responseText.trim() == "rg+cpf")
 	        {
-	        	alert('CPF e RG já utilizado');
+	        	Materialize.toast('RG e CPF já utilizados!', 1500, 'rounded red');
 	        }
 	        if ( error.responseText.trim() == "email+cpf+rg")
 	        {
-	        	alert('Email, CPF e RG já utilizado');
+	    	   Materialize.toast('Email,CPF e RG já utilizados!', 1500, 'rounded red');
 	        }
 	      
 	        }

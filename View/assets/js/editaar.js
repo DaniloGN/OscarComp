@@ -6,7 +6,6 @@ $(document).ready(function() {
 		window.location.href="../View/indexLogado.html";
 	});
 	var user;
-	var tipo;
 	$.ajax({
 	url: "../Controller/Editar.php",
 	type: 'POST',
@@ -35,21 +34,33 @@ $(document).ready(function() {
 	}
 	});
 	$("#editar").click(function () {
+		data = $("#nascimento").val();
+		telefone = $("#telefone").val();
 		var testevazio = true;
 		if(($("#senha").val() == "" && $("#senha_confirmacao").val() == "") || ($("#senha").val() != "" && $("#senha_confirmacao").val() != "")){
-		alert("vai se foder");
 		testevazio = true;
 		}
 		else{
 		testevazio = false;
-		alert("Preencha ambas as senhas");
+		Materialize.toast('Preencha ambas as senhas', 1500, 'rounded red');
 		}
 
 		if(!$("#email").val() || !$("#nome").val() || !$("#sobrenome").val() || !$("#cpf").val() || !$("#rg").val() || !$("#genero").val() 
 		|| !$("#nascimento").val() || !$("#ddd").val() || !$("#telefone").val() || !$("#rua").val() || !$("#numero").val() || !$("#cidade").val() 
 		|| !$("#cep").val() || !$("#uf").val()){
 			testevazio = false;
+			Materialize.toast('Preencha todos os campos!', 1500, 'rounded red');
 		}
+		else if(data.length < 10){
+    	testevazio = false;
+    	Materialize.toast('Data de nascimento inválida!', 1500, 'rounded red');
+    	}
+
+    	else if(telefone.length < 10){
+    	testevazio = false;
+    	Materialize.toast('Telefone inválido!', 1500, 'rounded red');
+    	}
+
 	 	var campoEmail = $("#email").val();
 	 	var campoSenha = $("#senha").val();
 	 	var campoNovaSenha = $("#senha_confirmacao").val();

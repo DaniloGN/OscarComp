@@ -7,24 +7,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="./assets/materialize/css/materialize.min.css" media="screen,projection"/>
-  <link type="text/css" rel="stylesheet" href="./assets/css/cadastro.css" />
+  <link type="text/css" rel="stylesheet" href="./assets/css/cadastroo.css" />
 </head>
 <body>
-  <header class="slidetext-center home text-center" data-anchor="firstPage" id="home">
-    <nav class="navbar-fixed">
-      <div class="nav-wrapper">
-        <a href="index.html" class="brand-logo">
-        <img src="./assets/img/logo-menu.png"  id="imagem_logo" ></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#evento" class="cor_menu">O Evento</a></li>
-          <li><a href="#apresentacoes" class="cor_menu">Apresentadores</a></li>
-          <li><a href="#patrocinadores" class="cor_menu">Patrocinadores</a></li>
-          <li><a href="#categorias" class="cor_menu">Categorias</a></li>
-          <li><a href="#login" class="cor_menu">Login</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+
+  <header class="navbar-fixed slidetext-center home text-center" data-anchor="firstPage" id="home">
+
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="index.html#palestrantes2" class="cor_drop">Palestrantes</a></li>
+        <li><a href="index.html#organizadores2" class="cor_drop">Organizadores</a></li>
+        <li><a href="index.html#local2" class="cor_drop">Patrocinadores</a></li>
+        <li><a href="index.html#local2" class="cor_drop">Localização</a></li>
+      </ul>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">
+          <img src="./assets/img/logo-menu.png" id="imagem_logo"></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html#evento" class="cor_menu">O Evento</a></li>
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-button cor_menu" href="#!"  data-activates="dropdown1">Mais Infos<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+  
   <section id="cadastro" class="slide cadastro_p row">
     <h3 class="center-align">Insira seus dados pessoais</h3>
     <div class="container margin-top2">
@@ -33,24 +41,24 @@
 
           <div class="row">
             <div class="input-field col s12 m6">
-              <input id="nome" name="nome" type="text" required/>
+              <input id="nome" name="nome" type="text"/>
               <label for="nome">Nome</label>
             </div>
 
             <div class="input-field col s12 m6">
-              <input id="sobrenome" name="sobrenome" type="text" required/>
+              <input id="sobrenome" name="sobrenome" type="text"/>
               <label for="sobrenome">Sobrenome</label>
             </div>
           </div>
 
           <div class="row">
             <div class="input-field col s6 m3">
-              <input id="nascimento" name="nascimento" type="text" class="datepicker" placeholder="dd/mm/yyyy" required/>
+              <input id="nascimento" name="nascimento" type="text" class="datepicker" placeholder="dd/mm/yyyy"/>
               <label for="nascimento">Nascimento</label>
             </div>
 
             <div class="input-field col s6 m3">
-              <select id="genero" name="genero" required="true">
+              <select id="genero" name="genero"="true">
                 <option value="" disabled selected>Selecione um gênero</option>
                 <option value="Masculino">Masculino</option>
                 <option value="Feminino">Feminino</option>
@@ -60,39 +68,39 @@
             </div>
 
             <div class="input-field col s6 m3">
-              <input id="rg" name="rg" type="text" maxlength="11" required/>
+              <input id="rg" name="rg" type="text" maxlength="11"/>
               <label for="rg">RG</label>
             </div>
 
             <div class="input-field col s6 m3">
-              <input id="cpf" name="cpf" type="text" placeholder="000.000.000-00" minlength="11" required/>
-              <label for="cpf">CPF</label>
+              <input id="cpf" class="" name="cpf" type="text" placeholder="000.000.000-00" minlength="11"/>
+              <label data-error="CPF já utilizado!" for="cpf">CPF</label>
             </div>
           </div>
 
           <div class="row">
             <div class="input-field col s9 m5">
-              <input id="rua" name="rua" type="text" required/>
+              <input id="rua" name="rua" type="text"/>
               <label for="rua">Logradouro</label>
             </div>
 
             <div class="input-field col s3 m1">
-              <input id="numero" name="numero" type="text" required/>
+              <input id="numero" name="numero" type="text"/>
               <label for="numero">Número</label>
             </div>
 
             <div class="input-field col s12 m3">
-              <input id="cidade" name="cidade" type="text" required/>
+              <input id="cidade" name="cidade" type="text"/>
               <label for="cidade">Cidade</label>
             </div>
 
             <div class="input-field col s9 m2">
-              <input id="cep" name="cep" type="text" placeholder="00000-000" required/>
+              <input id="cep" name="cep" type="text" placeholder="00000-000"/>
               <label for="cep">CEP</label>
             </div>
 
             <div class="input-field col s3 m1">
-              <select name="uf" id="uf" required="true">
+              <select name="uf" id="uf"="true">
                 <option value="AC">AC</option>
                 <option value="AL">AL</option>
                 <option value="AM">AM</option>
@@ -126,17 +134,17 @@
           </div>
           <div class="row">
             <div class="input-field col s2 m1">
-              <input id="ddd" name="ddd" type="text" placeholder="00" required/>
+              <input id="ddd" name="ddd" type="text" placeholder="00"/>
               <label for="ddd">DDD</label>
             </div>
 
             <div class="input-field col s10 m5">
-              <input id="telefone" name="telefone" type="text" required/>
+              <input id="telefone" name="telefone" type="text"/>
               <label for="telefone">Telefone</label>
             </div>
 
             <div class="input-field col s12 m6">
-              <input id="email" type="email" name="email" class="validade" required/>
+              <input id="email" type="email" name="email" class="validate"/>
               <label for="email">Email</label>
             </div>
           </div>
@@ -144,12 +152,12 @@
 
           <div class="row">
             <div class="input-field col s12 m6">
-              <input id="senha" name="senha" type="password" required/>
+              <input id="senha" name="senha" type="password"/>
               <label for="senha">Senha</label>
             </div>
 
             <div class="input-field col s12 m6">
-              <input id="senha_confirmacao" name="senha_confirmacao" type="password" required/>
+              <input id="senha_confirmacao" name="senha_confirmacao" type="password"/>
               <label for="senha_confirmacao">Confirmação da senha</label>
             </div>
           </div>

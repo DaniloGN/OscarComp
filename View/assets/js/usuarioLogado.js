@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+	$(".button-colapse").sideNav();
     var user;
 	$.ajax({
 	url: "../Controller/UsuarioLogado.php",
