@@ -2,7 +2,6 @@ nav {
   background-color: black;
 }
 
-
 .margin-top2{
   margin-top: 2em;
 }
@@ -43,4 +42,8 @@ nav {
 #linha_botoes button{
   margin-left: 0.5em;
   margin-right: 0.5em;
+}
+
+.cor_drop{
+  color: black;
 }

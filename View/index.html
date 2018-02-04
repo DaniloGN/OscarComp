@@ -10,12 +10,14 @@
   <link type="text/css" rel="stylesheet" href="./assets/css/index.css" />
 </head>
 <body>
-  <header class="navbar-fixed slidetext-center home text-center" data-anchor="firstPage" id="home">
+  <div class="fullpage">
+  <header class="slidetext-center home text-center"  id="home">
+    <div class="navbar-fixed">
     <ul id="dropdown1" class="dropdown-content">
-      <li><a href="#palestrantes">Palestrantes</a></li>
-      <li><a href="#organizadores">organizadores</a></li>
-      <li><a href="#local">Patrocinadores</a></li>
-      <li><a href="#local">Localização</a></li>
+      <li><a href="#palestrantes2">Palestrantes</a></li>
+      <li><a href="#organizadores2">Organizadores</a></li>
+      <li><a href="#local2">Patrocinadores</a></li>
+      <li><a href="#local2">Localização</a></li>
   </ul>
     <nav>
       <div class="nav-wrapper">
@@ -29,7 +31,9 @@
        </ul>
       </div>
     </nav>
-      <div class="logo1 row-fluid center-align">
+  </div>
+
+      <div class="logo2 row-fluid center-align">
         <img src="./assets/img/logo.png" class="t_logo">
       </div>
 
@@ -39,20 +43,17 @@
     </header>
 
 
-
-  <section id="evento">
+<div class="fullPage">
+  <section id="evento" class="slide Evento_p row" data-anchor="firstPage">
     <div class="row fundo_tema"  style="padding-top: 5em;">
       <div class="col s12 m7 offset-m1" id="#descricao">
-        <h4 class="center-align blue-grey-text text-lighten-4" style="padding-bottom: 0.5em;">Oscar CompJúnior</h4>
-        <p class="center-align blue-grey-text text-lighten-4 flow-text" style="padding-bottom: 2.5em;">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <h4 class="center-align white-text text-lighten-4" style="padding-bottom: 0.5em;">Oscar CompJúnior</h4>
+        <p class="center-align white-text text-lighten-4 flow-text" style="padding-bottom: 2.5em;">
+          A maior premiação de membros trainees de EJ’s do sul de Minas! De tudo um pouco, além de alegria esse Oscar tem emoção. Registre-se para espiar as categorias, garanta seu lugar nas cadeiras da apresentação.</p>
+          <h6 class="white-text"><strong>Data: 06 de fevereiro de 2018</h6>
+          <a href="#local2"><h6 class="white-text">Local: Anfiteatro do DCC UFLA</h6></strong></a>
+
+
       </div>
 
       <div class="col s10 m3 offset-m1 center-align">
@@ -66,46 +67,49 @@
 
         <div class="container">
           <div class="row">
-            <div class="col s6 m3 offset-m1">
-              <div class="my-card">
-                <img class="responsive-img" src="http://via.placeholder.com/600x600" />
-                <h5 class="center-align">Sorriso, ahhh</h5>
+            <div class="col s6 m3 offset-m1 card">
+                <a href="../View/cadastro.html" > <img  class="responsive-img img_categorias foto" id="teste_hover" src="./assets/img/sorriso.jpg"
+                  onMouseOver="this.src='./assets/img/sorriso2.jpg'"
+                  onMouseOut="this.src='./assets/img/sorriso.jpg'" /></a>
+                <p class="center-align">Sorriso, ahhh</p>
               </div>
-            </div>
 
-            <div class="col s6 m3 offset-m1">
-              <div class="my-card">
-                <img class="responsive-img" src="http://via.placeholder.com/600x600" />
-                <h5 class="center-align">Sorriso, ahhh</h5>
-              </div>
-            </div>
+              <div class="col s6 m3 offset-m1 card">
+                  <a href="../View/cadastro.html" > <img  class="responsive-img img_categorias foto" id="teste_hover" src="./assets/img/abraco.jpg"
+                    onMouseOver="this.src='./assets/img/abraco2.jpg'"
+                    onMouseOut="this.src='./assets/img/abraco.jpg'" /></a>
+                  <p class="center-align">Abraço de bispo</p>
+                </div>
 
-            <div class="col s6 m3 offset-m1">
-              <div class="my-card">
-                <img class="responsive-img" src="http://via.placeholder.com/600x600" />
-                <h5 class="center-align">Sorriso, ahhh</h5>
-              </div>
-            </div>
+              <div class="col s6 m3 offset-m1 card">
+                  <a href="../View/cadastro.html" > <img  class="responsive-img img_categorias foto" id="teste_hover" src="./assets/img/culaxa.jpg"
+                    onMouseOver="this.src='./assets/img/culaxa2.jpg'"
+                    onMouseOut="this.src='./assets/img/culaxa.jpg'" /></a>
+                  <p class="center-align">Miss Culaxa</p>
+                </div>
 
-            <div class="col s6 m3 offset-m1">
-              <div class="my-card">
-                <img class="responsive-img" src="http://via.placeholder.com/600x600" />
-                <h5 class="center-align">Sorriso, ahhh</h5>
-              </div>
-            </div>
+              <div class="col s6 m3 offset-m1 card">
+                  <a href="../View/cadastro.html" > <img  class="responsive-img img_categorias foto" id="teste_hover" src="./assets/img/rei2.jpg"
+                    onMouseOver="this.src='./assets/img/rei22.jpg'"
+                    onMouseOut="this.src='./assets/img/rei2.jpg'" /></a>
+                  <p class="center-align">Rei Delas</p>
+                </div>
 
-            <div class="col s6 m3 offset-m1">
-              <div class="my-card">
-                <img class="responsive-img" src="http://via.placeholder.com/600x600" />
-                <h5 class="center-align">Sorriso, ahhh</h5>
-              </div>
-            </div>
+              <div class="col s6 m3 offset-m1 card">
+                  <a href="../View/cadastro.html" > <img  class="responsive-img img_categorias foto" id="teste_hover" src="./assets/img/role.jpg"
+                    onMouseOver="this.src='./assets/img/role2.jpg'"
+                    onMouseOut="this.src='./assets/img/role.jpg'" /></a>
+                  <p class="center-align">Deus abençoe o rolê</p>
+                </div>
 
-            <div class="col s6 m3 offset-m1">
-              <div class="my-card">
-                <img class="responsive-img" src="http://via.placeholder.com/600x600" />
-                <h5 class="center-align">Sorriso, ahhh</h5>
-              </div>
+              <div class="col s6 m3 offset-m1 card">
+                  <a href="../View/cadastro.html" > <img  class="responsive-img img_categorias foto" id="teste_hover" src="./assets/img/gentileza.jpg"
+                    onMouseOver="this.src='./assets/img/gentileza2.jpg'"
+                    onMouseOut="this.src='./assets/img/gentileza.jpg'" /></a>
+                  <p class="center-align">Super Gentileza</p>
+                </div>
+
+
             </div>
           </div>
         </div>
@@ -116,18 +120,20 @@
   </section>
 
 <!-- PALESTRANTES -->
+<div class="retangulo" id="palestrantes2" />
+  <h4 class="alinhar  text-lighten-4">
+    <strong>Palestrantes</strong>
+  </h4>
 
-  <section id="palestrantes" class="slide palest_p">
-    <h4 class="alinhar blue-grey-text text-lighten-4 center-align">
-      <strong>Palestrantes</strong>
-    </h4>
+
+  <section id="palestrantes" class="slide palest_p row" data-anchor="secondPage">
 
     <div class="container">
     <div class="row">
 
       <div class="col s12 m4 ">
         <div class="center-align">
-          <img src="./assets/img/karol.jpg" id="oo" class="center-align img- responsive img-circle" alt="Foto de Perfil"/>
+          <img src="./assets/img/karol.jpg" class="center-align img- responsive img-circle" alt="Foto de Perfil"/>
         </div>
           <h5 class="cor_nomes center-align"><strong>Karoline</h5>
         </div>
@@ -173,16 +179,19 @@
     </div>
   </section>
 
-  <!-- ORGANIZADORES -->
 
-  <section id="organizadores" class="slide organ_p">
-    <h4 class="alinhar  blue-grey-text text-lighten-4 center-align">
-      <strong>Organizadores</strong>
-    </h4>
+  <!-- ORGANIZADORES -->
+  <div class="retangulo" id="organizadores2" />
+
+  <h4 class="alinhar  text-lighten-4">
+    <strong>Organizadores</strong>
+  </h4>
+
+  <section id="organizadores" class="slide organ_p row" data-anchor="thirdPage">
 
     <div class="row">
       <div class="col s12 m4">
-        <img src="./assets/img/bru.jpg" id="oo" class="img- responsive img-circle" alt="Foto de Perfil"/>
+        <img src="./assets/img/bruna.jpeg" id="oo" class="img- responsive img-circle" alt="Foto de Perfil"/>
         <h5 class="center-align cor_nomes"><strong>Bruna</h5>
       </div>
 
@@ -200,7 +209,10 @@
   </section>
 
   <!-- patrocinadores/local -->
-  <section id="local" class="slide local_id row">
+  <div class="retangulo" id="local2" />
+
+<div class="alinhar2">
+  <section id="local" class="slide local_id row" data-anchor="fourthPage">
     <div class="row">
       <div class="col s6 text-center">
         <h3 class="center-align">Localização</h3>
@@ -221,11 +233,13 @@
    <div class="container">
      <div class="row">
        <div class="col l6 s12">
-        <h5 class="white-text">Footer Content</h5>
+        <a href="#"><img class="img_footer" src="./assets/img/oscar_modal.png"/></a>
         </div>
       </div>
     </div>
   </footer>
+</div>
+</div>
 
 <!-- *********************************************************************** -->
 
@@ -266,5 +280,26 @@
   <script type="text/javascript" src="./assets/materialize/js/materialize.min.js"></script>
   <script type="text/javascript" src="./assets/js/index.js"></script>
   <script type="text/javascript" src="./assets/js/funcBarra.js"></script>
+
+  <script>
+                $(document).ready(function(){
+                    $('#fullpage').fullpage({
+                      	sectionsIds: ['#evento', '#palestrantes', '#organizadores', '#local'],
+                        anchors: ['firstPage', 'secondPage', 'thirdPage', ' fourthPage'],
+                        menu: '#navbar',
+                        fitToSection: true,
+                        continuousVertical: true,
+                        paddingTop: '3em'
+                    });
+                });
+</script>
+
+<script>
+                $(document).ready(function(){
+                  $(".button-colapse").sideNav();
+                };
+                </script>
+                </div>
 </body>
+
 </html>
