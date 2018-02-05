@@ -24,10 +24,12 @@
         <a href="#" class="brand-logo">
           <img src="./assets/img/logo-menu.png"  id="imagem_logo" />
         </a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#evento" class="cor_menu">O Evento</a></li>
-          <li><a class="dropdown-button cor_menu" href="#!" data-activates="dropdown1">Mais Infos<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a id="login" class="cor_menu">Login</a></li>
+          <li><a href="#evento" onclick="mostrarAtivo(this);" class="cor_menu">O Evento</a></li>
+          <li><a class="dropdown-button cor_menu" href="#!"onclick="mostrarAtivo(this);" data-activates="dropdown1">Mais Infos<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a id="login" onclick="mostrarAtivo(this);" class="cor_menu" >Login</a></li>
        </ul>
       </div>
     </nav>
@@ -299,7 +301,19 @@
                   $(".button-colapse").sideNav();
                 };
                 </script>
-                </div>
+
+  <script>
+   function mostrarAtivo(tag){
+   var tag_li = document.getElementById('nav-mobile');
+   var tag_a = tag_li.getElementsByTagName('a');
+   for (i=0; i<tag_a.length; i++ )
+   {
+      tag_a[i].style.color = "";
+   }
+      tag.style.color = "#FFEC6E";
+   }
+</script>
+
 </body>
 
 </html>
