@@ -8,7 +8,7 @@ $(document).ready(function() {
 	data: { },
 	  success: function(result) {
 	    user = jQuery.parseJSON(result);
-	  	$("#logado").html(user.nomeUser);
+	  	$("#logado").html(user.nomeUser + '<i class="material-icons right">arrow_drop_down</i>');
 
 	  },
 	  error:function(error){

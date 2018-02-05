@@ -8,7 +8,7 @@ nav {
 }
 
 .cor_menu {
-  color: #6E6633 ;
+  color: #FFEC6E ;
 }
 
 .input-field input[type=text]:focus {
@@ -49,10 +49,26 @@ nav {
     color: red;
     margin-top: 0px;
 }
-#toast-container {
+/*#toast-container {
   top: auto !important;
   right: auto !important;
   bottom: 12%;
   left:40.5%; 
 
+}*/
+
+#dropdown1 li{
+  background-color: black;
+}
+
+#dropdown1 a{
+  color: #FFEC6E !important;
+}
+
+#dropdown2 li{
+  background-color: black;
+}
+
+#dropdown2 a{
+  color: #FFEC6E !important;
 }

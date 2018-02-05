@@ -229,7 +229,7 @@ form {
 
 
 .cor_menu {
-  color: #6E6633 ;
+  color: #FFEC6E ;
 }
 
 #imagem_logo {
@@ -329,4 +329,20 @@ form {
   width: 60px;
   height: 104px;
 
+}
+
+#dropdown1 li{
+  background-color: black;
+}
+
+#dropdown1 a{
+  color: #FFEC6E !important;
+}
+
+#dropdown2 li{
+  background-color: black;
+}
+
+#dropdown2 a{
+  color: #FFEC6E !important;
 }

@@ -12,10 +12,6 @@ $(window).scroll(function(){
 $(document).ready(function() {
     $('select').material_select();
 
-$("#cancelar").click(function () {
-	window.location.href="../View/index.html";
-});
-
 $("#cadastrar").click(function()
 {	
 	cpf = $("#cpf").val();

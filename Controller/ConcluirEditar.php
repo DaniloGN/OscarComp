@@ -57,5 +57,7 @@
 	$updateEndereco = $enderecoDAO->update("CEP","'".$endereco->getCep()."'","LOGIN_idLOGIN =".$_SESSION["idLogin"]);
 	$updateEndereco = $enderecoDAO->update("UF","'".$endereco->getUf()."'","LOGIN_idLOGIN =".$_SESSION["idLogin"]);
 
+	$_SESSION["NomeInscrito"]= $inscrito->getNome();
+
 	response("ok",200);
 ?>

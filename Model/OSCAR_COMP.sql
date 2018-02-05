@@ -31,7 +31,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `endereco` (
   `idENDERECO` int(10) UNSIGNED NOT NULL,
   `RUA` varchar(45) NOT NULL,
-  `NUMERO` int(10) UNSIGNED DEFAULT NULL,
+  `NUMERO` varchar(10) DEFAULT NULL,
   `CIDADE` varchar(45) NOT NULL,
   `CEP` int(8) UNSIGNED NOT NULL,
   `UF` char(2) NOT NULL,

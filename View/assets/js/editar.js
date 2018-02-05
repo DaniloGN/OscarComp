@@ -2,9 +2,6 @@ $(document).ready(function() {
     $('select').material_select();
 	Materialize.updateTextFields();
 
-	$("#cancelar").click(function () {
-		window.location.href="../View/indexLogado.html";
-	});
 	var user;
 	$.ajax({
 	url: "../Controller/Editar.php",
@@ -34,6 +31,7 @@ $(document).ready(function() {
 		window.location.href="../View/index.html";
 	}
 	});
+
 	$("#editar").click(function () {
 		data = $("#nascimento").val();
 		telefone = $("#telefone").val();
@@ -114,11 +112,9 @@ $(document).ready(function() {
 						'uf' : campoUf },
 
 		      success: function(result) {
-		      	console.log(result);
 		        window.location.href = "../View/indexLogado.html";
 		        },
 		        error:function(error){
-		        console.log(error);
 				Materialize.toast('Senha antiga não confere!', 1500, 'rounded red');
 		        }
 			});
