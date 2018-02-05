@@ -27,6 +27,7 @@ $(document).ready(function() {
 	$("#cidade").val(user.cidade);
 	$("#cep").val(user.cep);
 	$("#uf").val(user.uf);
+	$('select').material_select();
 	Materialize.updateTextFields();
 	  },
 	error:function(error){
@@ -36,6 +37,9 @@ $(document).ready(function() {
 	$("#editar").click(function () {
 		data = $("#nascimento").val();
 		telefone = $("#telefone").val();
+		cep = $("#cep").val();
+		ddd =  $("#ddd").val();
+
 		var testevazio = true;
 		if(($("#senha").val() == "" && $("#senha_confirmacao").val() == "") || ($("#senha").val() != "" && $("#senha_confirmacao").val() != "")){
 		testevazio = true;
@@ -59,6 +63,15 @@ $(document).ready(function() {
     	else if(telefone.length < 10){
     	testevazio = false;
     	Materialize.toast('Telefone inválido!', 1500, 'rounded red');
+    	}
+    	else if(cep.length < 9){
+    	testevazio = false;
+    	Materialize.toast('CEP inválido!', 1500, 'rounded red');
+    	}
+
+    	else if(ddd.length < 2){
+    	testevazio = false;
+    	Materialize.toast('DDD inválido!', 1500, 'rounded red');
     	}
 
 	 	var campoEmail = $("#email").val();
@@ -106,7 +119,7 @@ $(document).ready(function() {
 		        },
 		        error:function(error){
 		        console.log(error);
-		        alert("Senha antiga não confere!");
+				Materialize.toast('Senha antiga não confere!', 1500, 'rounded red');
 		        }
 			});
 		}

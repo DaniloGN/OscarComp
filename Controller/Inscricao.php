@@ -93,7 +93,7 @@
 		if($insert){
 		}
 		$fields = "RUA,NUMERO,CIDADE,CEP,UF,LOGIN_idLOGIN";
-		$params = ("'".$endereco->getRua()."',".$endereco->getNumero().",'".$endereco->getCidade()."',".$endereco->getCep().",'".$endereco->getUf()."',".$vetor['idLOGIN']);
+		$params = ("'".$endereco->getRua()."',".$endereco->getNumero().",'".$endereco->getCidade()."','".$endereco->getCep()."','".$endereco->getUf()."',".$vetor['idLOGIN']);
 		$insert = $enderecoDAO->insert($fields,$params);
 		if($insert){
 		}

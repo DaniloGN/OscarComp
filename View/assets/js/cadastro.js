@@ -21,6 +21,8 @@ $("#cadastrar").click(function()
 	cpf = $("#cpf").val();
 	data = $("#nascimento").val();
 	telefone = $("#telefone").val();
+	cep = $("#cep").val();
+	ddd = $("#ddd").val();
 
 	var testevazio = true;
 	if($("#senha").val() != $("#senha_confirmacao").val()){
@@ -60,6 +62,15 @@ $("#cadastrar").click(function()
     	testevazio = false;
     	Materialize.toast('Telefone inválido!', 1500, 'rounded red');
     }
+	else if(cep.length < 9){
+	testevazio = false;
+	Materialize.toast('CEP inválido!', 1500, 'rounded red');
+	}
+	else if(ddd.length < 2){
+    	testevazio = false;
+    	Materialize.toast('DDD inválido!', 1500, 'rounded red');
+    }
+
 
  	var campoEmail = $("#email").val();
  	var campoSenha = $("#senha").val();
